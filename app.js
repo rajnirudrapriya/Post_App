@@ -4,8 +4,9 @@ dotenv.config(); // Load variables from .env
 
 const app = express();
 const { connectDb } = require('./config/db');
-const postRoute = require('./Router/postRouter');
-const userRoute = require('./Router/userRouter');
+const postRouter = require('./Router/postRouter');
+const userRouter = require('./Router/userRouter');
+
 
 let PORT = process.env.PORT || 5000;
 
